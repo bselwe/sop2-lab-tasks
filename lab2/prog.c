@@ -305,6 +305,7 @@ int main(int argc, char **argv)
 
     initializeNode();
     initializeQueue();
+	
     sethandler(exitHandler, SIGINT);
     sethandler(receivedMessageHandler, SIGRTMIN);
     setQueueNotifier();
