@@ -1,0 +1,4 @@
+## SOP 2 Lab - task 3 (CS)
+**UDP Sockets**
+
+Write client/server UDP (INET domain) application. Client randomizes a 8 digit number, prints it on stdout then sends it in binary form. Server holds internal mask of bits (0 initially), with every number received it modifies the binary mask by adding all ones from the number received (binary operator "|") to the mask. With 70% chance server sends current mask (as binary number) to the client as the response. Client prints the response on the stdout and exits. As server mask turns to be all ones server exits with a message "stop processing". Client must take care to retransmit the number once when it does not receive the response within 0.3 sec.
