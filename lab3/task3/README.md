@@ -1,0 +1,4 @@
+## SOP 2 Lab - task 3 (tutorial)
+**TCP Sockets**
+
+Serwer TCP przyjmuje połączenia od klientów, każdy z klientów przesyła do serwera 3 losowe liczby z przedziału [1-1000]. W odpowiedzi na te liczby serwer przesyła maksymalną liczbę, jaką dostał do tej pory. Jeśli klient w odpowiedzi otrzyma tą samą liczbę co wysłał, to ma wypisać słowo „HIT” na stdout. Klient kończy się po 3 próbach, serwer działa aż do otrzymania SIGINT, w reakcji na który ma wypisać, ile w sumie liczb dostał. Dane mają być przesyłane jako liczby (binarnie), a nie jako tekst. Serwer ma być programem jedno procesowym i jedno wątkowym.
